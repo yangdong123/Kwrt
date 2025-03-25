@@ -28,8 +28,8 @@
  	$(TOPDIR)/scripts/moxa-encode-fw.py \
  		--input $@ \
 
---- a/package/boot/uboot-envtools/files/qualcommax_ipq50xx
-+++ b/package/boot/uboot-envtools/files/qualcommax_ipq50xx
+--- a/package/boot/uboot-tools/uboot-envtools/files/qualcommax_ipq50xx
++++ b/package/boot/uboot-tools/uboot-envtools/files/qualcommax_ipq50xx
 @@ -8,6 +8,11 @@ touch /etc/config/ubootenv
  board=$(board_name)
  
@@ -330,7 +330,7 @@
 
 --- a/package/firmware/ipq-wifi/Makefile
 +++ b/package/firmware/ipq-wifi/Makefile
-@@ -33,11 +33,15 @@ ALLWIFIBOARDS:= \
+@@ -33,11 +33,17 @@ ALLWIFIBOARDS:= \
  	asus_rt-ax89x \
  	buffalo_wxr-5950ax12 \
  	cambiumnetworks_xe34 \
